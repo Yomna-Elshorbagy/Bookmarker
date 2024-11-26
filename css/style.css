@@ -1,0 +1,100 @@
+/****global style****/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #f7ecde;
+  line-height: 20px;
+  scroll-behavior: smooth;
+}
+
+.padding-x {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+.position-relative {
+  position: relative !important;
+}
+.dashed-line {
+  border-top: 2px dashed #333;
+  width: 100%;
+  margin: 20px 0;
+}
+/****first section****/
+.container .hedding-title {
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(53, 46, 40);
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 1;
+}
+.container .form-tittle i {
+  font-size: 25px;
+}
+.container h1 {
+  position: relative;
+}
+.container h1::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 25%;
+  bottom: 10px;
+  left: 40%;
+  right: 0;
+  background-color: #fec260;
+  z-index: -1;
+  transition: all 0.4s ease-in;
+  /* width: max-content; */
+}
+.container h1:hover::before {
+  height: 50%;
+}
+#form-data .form-tittle {
+  background: linear-gradient(to right, #31964c, #b4ac49);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#form-data h2 {
+  font-family: "Righteous", cursive;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+#bookmark .site-data{
+    font-family: "PT Sans", Caption;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+#bookmark .btn-submit {
+  background-color: #d1512d;
+  color: #fff;
+  border: 1px solid #d1512d;
+  cursor: pointer;
+
+}
+#bookmark .btn-submit:hover {
+  background-color: #bb4120;
+  border-color: #a03315;
+}
+
+#tableContent .btn-color{
+  background-color: #9eb23b;
+}
+
+#tableContent .btn-color:hover{
+  background-color: #8A9E23;
+}
